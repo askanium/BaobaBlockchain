@@ -38,7 +38,9 @@ genesis file.
 
 However, you can define other "regular" accounts and their corresponding balance.
 
-Note that you will have to substitute
+Note that you will have to substitute the accounts from the genesis file as you don't have the matching private_keys for
+them. In order to generate a matching public/private key pairs, you can run a client (see below) and use the
+`Wallet Generator` option that will generate as many public/private keys as you need.
 
 #### Blocks are mined once in ~10 minutes or when there are 10 TXs
 
@@ -217,6 +219,8 @@ In order to use the client UI, you should create a `.wlt` file with the followin
 }
 ```
 
+It will auto-update with the account balance once the client is up and running.
+
 ### 4. Run the nodes
 
 This is an example of the command to run a node:
@@ -244,7 +248,14 @@ Note that the `-k` option is optional. In case you run a client without the `-k`
 generated in the `data/` folder under the project root with a unique filename. The next time you will run the client,
 you will still need to provide the path to that file in order to be able to use the balance in it.
 
-## Fun Fact
+## Conclusion
+
+This was a tough, but very interesting and insightful experience, where I have learned a great deal about blockchains.
+
+There are tons of things to improve, but hopefully I've done enough in this test mini-blockchain project to advance
+to the next level :).
+
+### Fun Fact
 
 It is disputed how long exactly baobabs live, but there is a Baobab in South Africa that is 47 m in circumference,
 and is said to have been carbon dated at over 6,000 years old ((source)[https://simple.wikipedia.org/wiki/Baobab]).
