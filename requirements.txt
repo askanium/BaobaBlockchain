@@ -18,6 +18,6 @@ requests==2.18.4
 shellescape==3.4.1
 six==1.11.0
 tornado==5.0.1
-urllib3==1.22
+urllib3==1.26.5
 vine==1.1.4
 Werkzeug==0.14.1
